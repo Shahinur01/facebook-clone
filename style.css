@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* app bar */
+.appBar{
+    min-width: 56px;
+    z-index: 5;
+    padding-bottom: 6px;
+    padding-top:6px;
+}
+.sizeIcon{
+    font-size: 3rem;
+}
+.searchInput{
+    min-height: 40px;
+    min-width: 230px;
+}
+.navBtn button:hover{
+ background: #f0f2f5 !important;
+}
+.navBtn button:hover i{
+    background:#f0f2f5 !important;
+}
+.navBtnActive i{
+ color: #0d6efd !important;
+}
+.navBtnActive{
+    position: relative;
+}
+.navBtnActive::before{
+    position: absolute;
+    content: '';
+    bottom: -4.5px;
+    left: 0;
+    transform:translateY(4.5px);
+    width:100%;
+    height: 3px;
+    border-bottom: 3px solid #0d6efd !important;
+}
+.menu{
+    width:35px;
+    height:35px;
+    cursor: pointer;
+    border-radius:50%;
+    padding:10px;
+    margin:0px 8px;
+    background: #D8DADF;
+
+}
+.menu:hover{
+    background: #D8DADF;
+}
+.avatar img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+.menuRight{
+    position:absolute;
+    margin-left: 320px;
+}
+/* Facebook body part start */
+#bodyPart{
+    margin:10px 10px 0px 10px;
+}
+#bodyPart{
+    background: #F0F2F5;
+}
+.userIcon img{
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+}
+.userTitle{
+    margin-left: 8px;
+}
+.list{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+}
+.userInfo {
+    margin-top:80px;
+    position: fixed;
+}
+.userTitle:hover{
+    background:#E4E6E9;
+    border-radius: 10px;
+    width:55%;
+    padding: 10px;
+}
+/* facebook story area */
+.story-area{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.story-area .story-box{
+    width:140px;
+    height:252px;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-size: auto 100%;
+    background-position: center center;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+}
+.user-avatar img{
+    width:50px;
+    height:50px;
+    border:3px solid #0D6EFD;
+    border-radius: 50%;
+}
+.story-area .story-box span{
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+}
+.story-area .story-box:hover{
+    background-size: auto 103%;
+}
+
+.story-area .story-box:nth-child(1){
+    background-image: url(./img/facebook1.jpg);
+}
+.story-area .story-box:nth-child(2){
+    background-image: url(./img/facebook2.jpg);
+}
+.story-area .story-box:nth-child(3){
+    background-image: url(./img/facebook3.jpg);
+}
+.story-area .story-box:nth-child(4){
+    background-image: url(./img/facebook4.jpg);
+}
+.story-area .story-box:nth-child(5){
+    background-image: url(./img/facebook5.jpg);
+}
+.story-area .story-box .own-story{
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding:10px;
+    border-radius:0px 0px 10px 10px;
+    text-align: center;
+  
+}
+.story-area .story-box .own-story span{
+    color: black;
+    text-align: center;
+    width: 96px;
+}
+.story-area .story-box .own-story a{
+    color:white;
+    background: #0D6EFD;
+    border:3px solid white;
+    border-radius: 50%;
+    width:16px;
+    height:16px;
+    padding: 8px;
+    display:inline-block;
+    box-sizing: content-box;
+    transform: translate(0px, -24px);
+    text-align: center;
+}
+/* facebook post area */
+.post-modal-area .card-body .modal-button img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.post-modal-area .card-body .modal-button button{
+    border:none;
+    width:90%;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: left;
+}
+.post-modal-area .card-body .modal-button button:hover{
+    background: #adafb1;
+}
+.icon-area .icon-box{
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+  padding: 8px 0px;
+  border-radius: 10px;
+}
+.icon-area .icon-box:hover{
+  background-color: #e9e9e9;
+}
+.icon-area .icon-box:nth-child(1) svg{
+  color:red;
+}
+.icon-area .icon-box:nth-child(2) svg{
+    color:green;
+}
+.icon-area .icon-box:nth-child(3) svg{
+    color:orange;
+}
+.icon-area{
+    display: flex;
+    justify-content: space-between;
+}
+ /* timeline area  */
+ .post-auth-area .user-info img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-right: 8px;
+ }
+ .details span{
+    display:block;
+ }
+ .user-info{
+    display:flex;
+ }
+.post-timeline-area .post-auth-area{
+    display:flex;
+    justify-content: space-between;
+}
+.post-timeline-area .post-auth-area button{
+    border: none;
+    background-color: transparent;
+    width:12px;
+    height:12px;
+    font-size:16px;
+    padding:16px;
+    /* border: 1px solid red; */
+    box-sizing:content-box;
+    line-height: 12px;
+    border-radius:50%;
+}
+.post-timeline-area .post-auth-area button:hover{
+    background-color: #e9e9e9;
+}
+.post-timeline-area .post-content-area img{
+    border-radius:10px;
+    width:100%;
+}
